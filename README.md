@@ -10,15 +10,15 @@ Put the following step in your workflow:
 
 ```yml
 - name: Minio Deploy
-uses: hkdobrev/minio-deploy-action@v1
-with:
-  endpoint: ${{ secrets.MINIO_ENDPOINT }}
-  access_key: ${{ secrets.MINIO_ACCESS_KEY }}
-  secret_key: ${{ secrets.MINIO_SECRET_KEY }}
-  bucket: 'mybucket'
-  # Optional inputs with their defaults:
-  source_dir: 'public'
-  target_dir: '/'
+  uses: lovellfelix/minio-deploy-action@v1
+  with:
+    endpoint: ${{ secrets.MINIO_ENDPOINT }}
+    access_key: ${{ secrets.MINIO_ACCESS_KEY }}
+    secret_key: ${{ secrets.MINIO_SECRET_KEY }}
+    bucket: 'mybucket'
+    # Optional inputs with their defaults:
+    source_dir: 'public'
+    target_dir: '/'
 ```
 
 Workflow example:
@@ -41,7 +41,7 @@ jobs:
       - uses: actions/checkout@v1
 
       - name: Minio Deploy
-        uses: hkdobrev/minio-deploy-action@v1
+        uses: lovellfelix/minio-deploy-action@v1
         with:
           endpoint: ${{ secrets.MINIO_ENDPOINT }}
           access_key: ${{ secrets.MINIO_ACCESS_KEY }}
