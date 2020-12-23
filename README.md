@@ -1,5 +1,6 @@
 # Minio Deploy GitHub Action
 
+This is a fork from hkdobrev/minio-deploy-action with some minor changes. 
 Run [minio client][] in GitHub Actions to deploy files to Minio object storage.
 
 It uses the `mc mirror --overwrite` command to deploy.
