@@ -1,6 +1,6 @@
-name: 'Minio Deploy'
+name: 'Minio upload'
 description: 'Deploy to Minio Storage'
-author: 'hkdobrev'
+author: 'lovellfelix'
 inputs:
   endpoint:
     description: 'Minio endpoint of object storage host'
@@ -34,4 +34,4 @@ runs:
     - '${{ inputs.bucket }}${{ inputs.target_dir }}'
 branding:
   icon: 'upload-cloud'
-  color: 'red'
+  color: 'black'
