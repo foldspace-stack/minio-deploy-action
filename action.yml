@@ -1,4 +1,4 @@
-name: 'Minio upload'
+name: 'foldspace-stack Minio upload'
 description: 'Deploy to Minio Storage'
 author: 'foldspace-stack'
 inputs:
