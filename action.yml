@@ -1,6 +1,6 @@
 name: 'Minio upload'
 description: 'Deploy to Minio Storage'
-author: 'lovellfelix'
+author: 'foldspace-stack'
 inputs:
   endpoint:
     description: 'Minio endpoint of object storage host'
