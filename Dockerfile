@@ -1,4 +1,4 @@
-FROM minio/mc:RELEASE.2024-08-26T15-33-07Z
+FROM minio/mc:RELEASE.2024-10-08T09-37-26Z
 
 # Copies your code file from your action repository to the filesystem path `/` of the container
 COPY entrypoint.sh /entrypoint.sh
